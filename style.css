@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.display{
+    height:100vh;
+    position: relative;
+    overflow: hidden;
+
+
+
+}
+.road{
+    margin-top: 600px;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width:1100%;
+    height:159px;
+    background-image: url(road.jpg);
+    mix-blend-mode:darken;
+    animation-name: road;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    
+
+
+}
+@keyframes road{
+    from{
+            top: 0;
+            left: 0;    
+        }
+        to{
+         top: 0px;
+         left:-1100px; 
+         
+    
+        } 
+
+}
+
+
+.roadx{
+    margin-top: 537px;
+    left:0;
+    height:110px;
+    background-size: cover;
+    mix-blend-mode:darken;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    
+    } 
+
+    @keyframes move{
+        from{
+            top: 0;
+            left: 0;    
+        }
+        to{
+         top: 0px;
+         left:1300px; 
+         
+    
+        } 
+    }
+
+
+    
